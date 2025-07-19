@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRISELDA WEB-SITE</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header id="head" class="container my-4 p-4 bg-light rounded shadow-sm fade-in text-center">
+      <img src="sitio-web.png" alt="Logo del sitio" class="img-fluid mb-3" style="max-width: 120px;" />
+      <h1 class="text-primary">GRISELDITA Web</h1>
+      <p class="text-muted">Bienvenido a una página de ejemplo en baja definición.</p>
+    </header>
+
+    <!-- Bar -->
+    <nav class="container bg-info p-3 rounded mb-4 sticky-top">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="#head">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="#inicio">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="#noti">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="container bg-white border border-dark rounded p-4 shadow fade-in">
+      <section id="inicio" class="mb-4">
+        <h2 class="text-warning">Inicio</h2>
+        <p>Esta es la sección de bienvenida. Aquí puedes dar una introducción a tu sitio.</p>
+      </section>
+
+      <section id="servicios" class="mb-4">
+        <h2 class="text-success">Servicios</h2>
+        <p>Describe los servicios que ofreces. Puedes incluir listas, íconos o enlaces.</p>
+      </section>
+
+      <aside id="noti" class="bg-light p-4 border border-dark rounded shadow-sm mb-4">
+        <h3 class="text-info">Noticias recientes</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" ><strong>•</strong> Lanzamos un nuevo producto</li>
+          <li class="list-group-item"><strong>•</strong> Actualización del sitio web</li>
+          <li class="list-group-item"><strong>•</strong> Promociones de temporada</li>
+        </ul>
+      </aside>
+
+      <section id="nosotros" class="mb-4">
+        <h2 class="text-danger">Nosotros</h2>
+        <p>Cuenta la historia de tu empresa, tu misión y visión.</p>
+      </section>
+
+      <section id="contacto" class="mb-4">
+        <h2 class="text-primary">Contacto</h2>
+        <p>Completa el formulario para ponerte en contacto con nosotros.</p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <figure class="imagen-placeholder d-flex justify-content-center align-items-center bg-light border border-dark rounded">
+              <span class="fs-1 fw-bold">GRISELDA PHOTO</span>
+            </figure>
+          </div>
+
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="reset" class="btn btn-outline-danger">Borrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container text-center bg-dark text-white p-3 rounded mt-4">
+      <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
